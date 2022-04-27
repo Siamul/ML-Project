@@ -1,0 +1,8 @@
+#!/bin/bash
+#$ -m abe
+#$ -M skhan22@nd.edu
+#$ -N psv2nodec
+#$ -q gpu
+#$ -l gpu=1
+
+python train_ps.py --cuda --content_dir /scratch365/skhan22/val2014 --style_dir /scratch365/skhan22/val2014
